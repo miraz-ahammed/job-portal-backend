@@ -15,6 +15,5 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return;
     }
   }
-  // @ts-expect-error - Express app is compatible with Node's request handler signature
   return app(req, res);
 }
